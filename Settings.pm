@@ -70,6 +70,9 @@ sub handler {
         
         $prefs->set('flags', $flags);
         
+        #selets needs to be copied.
+        $prefs->set('dummy_select' => $params->{'pref_dummy_select'});
+        
 		$class->SUPER::handler( $client, $params );
 		$prefs->writeAll();
 		$prefs->savenow();
@@ -77,6 +80,7 @@ sub handler {
 	}
     
 	$params->{'prefs'}->{'flags'}=$flags; 
+    $params->{'prefs'}->{'dummy_select'}=$prefs->get('dummy_select');
     
 	return $class->SUPER::handler( $client, $params );
 }

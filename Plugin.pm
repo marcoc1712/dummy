@@ -70,7 +70,7 @@ sub initPlugin {
 			text			    => "",
 			slider				=> 5,
 			checkbox			=> undef,
-			select				=> "A",
+			dummy_select		=> "A",
             flags               => { a => 'on',
                                      b => undef,
                                      c => 'on',
@@ -79,7 +79,6 @@ sub initPlugin {
                                      f => undef,  
                                 },
 	});
-	
 }
 
 sub settingsChanged{

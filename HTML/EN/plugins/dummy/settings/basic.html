@@ -15,15 +15,15 @@
 [% END %]
 
 [% WRAPPER setting title="PLUGIN_DUMMY_SELECT" desc="" %]
-<select class="stdedit" name="pref_selec" id="select" >
+<select class="stdedit" name="pref_dummy_select" id="dummy_select" >
 
-        <option [% IF prefs.select == "A" %]selected="selected" [% END %]value="A">
+        <option [% IF prefs.dummy_select == "A" %]selected="selected" [% END %]value="A">
             [% 'PLUGIN_DUMMY_SELECT_A' | string %]
         </option>
-        <option [% IF prefs.select == "B" %]selected="selected" [% END %]value="B">
+        <option [% IF prefs.dummy_select == "B" %]selected="selected" [% END %]value="B">
             [% 'PLUGIN_DUMMY_SELECT_B' | string %]
         </option>
-        <option [% IF prefs.select == "C" %]selected="selected" [% END %]value="C">
+        <option [% IF prefs.dummy_select == "C" %]selected="selected" [% END %]value="C">
             [% 'PLUGIN_DUMMY_SELECT_C' | string %]
         </option>
 

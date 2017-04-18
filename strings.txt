@@ -2,7 +2,7 @@ PLUGIN_DUMMY
 	EN	Dummy
 
 PLUGIN_DUMMY_DESC
-	EN	Showing how Settings.js works.
+	EN	A simple test case for settings.js
 
 PLUGIN_DUMMY_TEXT
 	EN	a TEXT input.
